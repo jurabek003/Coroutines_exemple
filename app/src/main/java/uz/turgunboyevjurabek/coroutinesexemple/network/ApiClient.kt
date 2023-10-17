@@ -6,6 +6,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 object ApiClient {
 
     const val BASE_URL="https://cbu.uz/uz/arkhiv-kursov-valyut/"
+
+
     fun getRetrofit(): Retrofit{
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
